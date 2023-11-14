@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+  background: radial-gradient(circle at center 50%, #222, black 40%) no-repeat;
+}
+
+.header-heading {
+  font-family: 'Luxurious Script', cursive;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+
+.tasks-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+.new-task-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-task-controls span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.new-task-controls input {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.tasks-section {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.task-type {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.task-type h3 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 2rem;
+  background-color: white;
+  color: black;
+  border-radius: 0.5rem;
+}
+
+.tasks {
+  width: 100%;
+}
+
+.tasks:empty {
+  display: none;
+}
+
+.task-wrapper {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  place-content: center;
+}
+
+.task-wrapper h1 {
+  text-align: center;
+}
